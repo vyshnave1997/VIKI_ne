@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero {
+  background: url(./images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background: url(./images/footer.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
+}
+
+
+/* CSS for card-img */
+.card-img {
+  border-radius: 0.75rem; /* Rounded corners */
+  overflow: hidden; /* Ensures the image doesn't overflow the border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle lift effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.card-img img {
+  width: 95%; /* Ensures the image covers the container */
+  height: 500px; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space under the image */
+}
+
+/* Hover effects */
+.card-img:hover {
+  transform: scale(1.05); /* Slightly scales up the image */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover for emphasis */
+}
